@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myswimming">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 안드로이드와 유튜브를 연결시켜야 하기 때문에 환경설정을 하는 것이다 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!--위치정보 접근 위한 퍼미션-->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /><!--음성인식에 필요-->
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon_swim2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MapsActivity"></activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCoox488v1OjL0tWFSrwppvwc3qY6YHdTg" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".기타.PlayActivity" />
+        <activity android:name=".add_set.YoutubeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyEditBoard" />
+        <activity android:name=".SizePlusActivity" />
+        <activity android:name=".add_set.SizeBoardActivity" />
+        <activity
+            android:name=".preLogin.MainActivity"
+            android:finishOnTaskLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/kakao_scheme"
+                    android:host="@string/kakaolink_host" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".preLogin.LoginActivity"
+            android:launchMode="singleInstance" />
+        <!--
+ android:launchMode 속성 조절시 액티비티가 중복으로 쌓이는 것을 방지해준대
+        그런데 인텐트 적용이 제대로 안된다 / 코드로는 플래그??인데, 그거는 디데이액티비티에 사용하면 좋겠다
+        -->
+        <activity android:name=".preLogin.SignupActivity" />
+        <activity android:name=".preLogin.FindPWActivity" />
+        <activity android:name=".preLogin.FindPW2Activity" /> <!--  -->
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MypageActivity">
+
+        </activity>
+        <activity android:name=".MyEditActivity" />
+        <activity android:name=".add_set.SizeActivity" />
+        <activity android:name=".TrainingActivity" />
+        <activity android:name=".add_set.DdayActivity" />
+        <activity android:name=".DayPlusActivity" />
+    </application>
+
+</manifest>

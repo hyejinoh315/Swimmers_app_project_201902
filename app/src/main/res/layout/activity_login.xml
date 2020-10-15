@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <!-- 패딩을 상위 레이아웃에 주면 스크롤뷰가 답답한 형태로 나와서 여기에다 패딩을 넣어줌 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="SWIMMERS"
+            android:fontFamily="monospace"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:src="@drawable/icon_swim2" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:id="@+id/login_id"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="24dp"
+                android:hint="Password"
+                android:id="@+id/login_pw"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_login"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:src="@drawable/icon_pro" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="LOG IN"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="OR" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_login2"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:src="@drawable/icon_facebook" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="LOG IN WITH FACEBOOK"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/findPWButton"
+                android:contextClickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Find Password"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:id="@+id/signUpButton"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

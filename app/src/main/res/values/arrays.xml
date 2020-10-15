@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brandName">
+        <item>브랜드명을 선택해 주세요</item>
+
+        <item>나이키</item> <!--1-->
+        <item>돌핀</item> <!--2-->
+        <item>랠리</item> <!--3-->
+        <item>르망고</item> <!--4-->
+        <item>미즈노</item> <!--5-->
+        <item>센티</item> <!--6-->
+        <item>스포티</item> <!--7-->
+        <item>스피도</item> <!--8-->
+        <item>스완스</item> <!--9-->
+        <item>아레나</item> <!--10-->
+        <item>제이키드</item> <!--11-->
+        <item>토네이도</item> <!--12-->
+        <item>티에스나인</item> <!--13-->
+        <item>펑키타</item> <!--14-->
+        <item>후그</item> <!--15-->
+        <item>기타</item> <!--16-->
+    </string-array>
+
+    <string-array name="fit">
+        <item>핏감을 선택해 주세요</item>
+
+        <item>아주 타이트해요</item> <!--1-->
+        <item>약간 타이트해요</item> <!--2-->
+        <item>적당해요</item> <!--3-->
+        <item>약간 커요</item> <!--4-->
+        <item>아주 커요</item> <!--5-->
+    </string-array>
+
+    <string-array name="grade">
+        <item>평점을 선택해 주세요</item>
+
+        <item>5</item> <!--1-->
+        <item>4</item> <!--2-->
+        <item>3</item> <!--3-->
+        <item>2</item> <!--4-->
+        <item>1</item> <!--5-->
+    </string-array>
+    
+</resources>

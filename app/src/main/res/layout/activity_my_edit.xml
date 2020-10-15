@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyEditActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름(별명)"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/myNameEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="name"
+                android:inputType="textPersonName"
+                android:maxLength="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="성별"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/genderGroup"
+                android:alwaysDrawnWithCache="false">
+
+                <RadioButton
+                    android:id="@+id/femaleRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:text="여성" />
+
+                <RadioButton
+                    android:id="@+id/maleRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:text="남성" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="연령"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/myAgeEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="age"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="세" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="키"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/myHeightEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="height"
+                android:inputType="number"
+                android:maxLength="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="cm" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="체중"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/myWeightEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="weight"
+                android:inputType="number"
+                android:maxLength="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="kg" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="토르소"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/myTorsoEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="torso"
+                android:inputType="number"
+                android:maxLength="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="cm" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/editOkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="작성 완료" />
+    <!--편집시 수정 완료(색상 빨강)로 바꾸기-->
+    <Button
+        android:id="@+id/pwEditButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="비밀번호 변경" />
+    <Button
+        android:id="@+id/userDeleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="회원탈퇴" />
+
+</LinearLayout>

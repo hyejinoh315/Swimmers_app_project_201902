@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_swim">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Find Password"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="#85CEDA"
+        android:drawableStart="@drawable/ic_mail_outline"
+        android:drawableLeft="@drawable/ic_mail_outline"
+        android:hint="Email"
+        android:id="@+id/findPWEmail"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#85CEDA"
+        android:drawableStart="@drawable/ic_person"
+        android:drawableLeft="@drawable/ic_person"
+        android:hint="Name"
+        android:id="@+id/findPWName"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#ffffff" />
+
+    <Button
+        android:id="@+id/findPWButton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="FIND"
+        android:textSize="18dp"
+        android:layout_marginBottom="30dp"/>
+
+
+</LinearLayout>

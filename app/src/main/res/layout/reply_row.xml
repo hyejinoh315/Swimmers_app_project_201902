@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--이미지뷰(프로필) 넣는것 고려하기
+        <TextView
+            android:id="@+id/title_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:gravity="center"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:padding="2dp"
+            android:minWidth="200dp">
+
+            <TextView
+                android:id="@+id/userId_reply"
+                android:textStyle="bold"
+                android:hint="사용자 아이디"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/memo_reply"
+                android:hint="댓글"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/time_reply"
+                android:hint="시스템 시간"
+                android:layout_marginLeft="5dp"
+                android:textSize="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="#A7A7A7" />
+
+</LinearLayout>

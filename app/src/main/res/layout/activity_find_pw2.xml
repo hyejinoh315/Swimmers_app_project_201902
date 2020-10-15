@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_swim">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Find Password"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="입력받은 이메일과 이름"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/text_view_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="비밀번호 변경이나 알려주는 기능 추가하기"/>
+    <Button
+        android:id="@+id/goToLogin"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="로그인 하러 가기"
+        android:textSize="18dp"
+        android:layout_marginBottom="30dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:minWidth="200dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:id="@+id/videoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="영상제목"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible">
+        </com.google.android.youtube.player.YouTubePlayerView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="#A7A7A7" />
+
+</LinearLayout>
